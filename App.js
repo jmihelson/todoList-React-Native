@@ -42,7 +42,7 @@ export default function App() {
 
 
     <KeyboardAvoidingView
-    // behavior={Platform.OS === "ios" ? "padding" : "height"}
+    behavior={Platform.OS === "ios" ? "padding" : "height"}
     style={styles.writetaskWrapper}
     >
       <TextInput style={styles.input} placeholder={'Write a task'} value={task} onChangeText={text => setTask(text)} />
